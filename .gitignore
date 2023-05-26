@@ -1,0 +1,17 @@
+<<<<<<< HEAD
+/.idea
+=======
+!.gitignore
+test/*
+
+frontend-html-css-spinazie/*
+!frontend-html-css-spinazie/pages/
+frontend-html-css-spinazie/pages/*
+!frontend-html-css-spinazie/pages/index.html
+
+# frontend-html-css-domeinshop/*
+# !frontend-html-css-domeinshop/index.html
+# !frontend-html-css-domeinshop/styles
+
+
+>>>>>>> 123aa08 (do it)
