@@ -15,17 +15,47 @@ Table of Contents:
 /*////////////////////////
     1. Global Styles
 ////////////////////////*/
-@import url('https://fonts.googleapis.com/css?family=Poppins');
-body {
-    font-family: 'Poppins';
-    font-size: 20px;
-}
 
 
 /*////////////////////////
-    2. Typography
+2. Typography
 ////////////////////////*/
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+body {
+    font-family: 'Poppins';
+    color: #15272E;
+    font-size: 12px;
+    /* margin: auto; */
+}
 
+h1 {
+    font-size: 96px;
+    /* color:  */
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 36px;
+    /* color:  */
+    font-weight: bold;
+}
+
+p {
+    margin: 12px;
+}
+
+/* source: https://www.w3schools.com/cssref/sel_placeholder.php */
+::-webkit-input-placeholder { /* Edge */
+    color: #15272E;
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #15272E;
+}
+  
+::placeholder {
+    color: #15272E;
+}
 
 
 /*////////////////////////
@@ -35,9 +65,36 @@ body {
 
 
 /*///////////// 3.1 Header /////////////*/
+div {
+    margin: auto;
+    max-width: 1000px;
+    padding: 300px;
+    padding-top: 10px;
 
+    text-align: center;
+    line-height: normal;
+    
+    background-image: url("../assets/images/mountains.jpg");
+    background-size: cover;
+    background-position: center;
+}
 
+input[type=text] {
+    border-radius: 50px 0 0 50px;
+    margin: -10px;
+    width: 250px;
+    padding: 12px 20px;
+    /* border-color: #15272E; */
+    background-color: transparent;
+}
 
+input[type=submit]  {
+    border-radius: 0 50px 50px 0;
+    width: 250px;
+    padding: 12px 20px;
+    color: white;
+    background-color: #15272E;
+}
 /*///////////// 3.2 Testimonial /////////////*/
 
 
