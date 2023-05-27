@@ -16,6 +16,15 @@ Table of Contents:
     1. Global Styles
 ////////////////////////*/
 
+a {
+    color: grey;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
 
 /*////////////////////////
 2. Typography
