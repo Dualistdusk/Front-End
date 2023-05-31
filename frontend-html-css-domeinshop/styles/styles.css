@@ -50,24 +50,25 @@ section {
 /*////////////////////////
 2. Typography
 ////////////////////////*/
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@font-face {
+    font-family: Poppins;
+    src: url('https://fonts.googleapis.com/css?family=Poppins')
+}
+
 body {
-    font-family: 'Poppins';
-    color: #15272E;
+    font-family: Poppins;
     font-size: 12px;
-    /* margin: auto; */
+    color: #15272E;
 }
 
 h1 {
     font-size: 96px;
-    /* color:  */
     font-weight: bold;
     text-align: center;
 }
 
 h2 {
     font-size: 24px;
-    /* color:  */
     font-weight: bold;
     margin: 24px;
 }
