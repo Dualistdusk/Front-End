@@ -34,7 +34,15 @@ img {
     border-radius: 8px;
     max-width: 100%;
     height: auto;
-  }
+}
+
+div {
+    margin: auto;
+    max-width: 1000px;
+    padding: 300px;
+    padding-top: 10px;
+}
+
   
 
 
@@ -53,12 +61,14 @@ h1 {
     font-size: 96px;
     /* color:  */
     font-weight: bold;
+    text-align: center;
 }
 
 h2 {
     font-size: 24px;
     /* color:  */
     font-weight: bold;
+    margin: 24px;
 }
 
 p {
@@ -86,12 +96,7 @@ p {
 
 
 /*///////////// 3.1 Header /////////////*/
-div {
-    margin: auto;
-    max-width: 1000px;
-    padding: 300px;
-    padding-top: 10px;
-
+div.header{
     text-align: center;
     line-height: normal;
     
@@ -117,8 +122,19 @@ input[type=submit]  {
     background-color: #15272E;
 }
 /*///////////// 3.2 Testimonial /////////////*/
+div.testimony {
+    padding: 50px;
+    box-shadow: 3px 6px 6px 3px #899CA0;
+    text-align: left;
+    margin-bottom: 50px;
+}
 
+div.portrait {
+    
+}  
 
+/* div.testimony + div.testimony {
+} */
 
 /*///////////// 3.3 Support /////////////*/
 section > input[type=submit] {
@@ -127,20 +143,28 @@ section > input[type=submit] {
 
 
 /*///////////// 3.4 Faq /////////////*/
-details {
-    max-width: 100%;
+section.faq{
+    max-width: 1000px;
+    margin: 50px;
 }
+
+/* details {
+} */
 
 details > summary {
     padding: 2px 6px;
+    width: 100%;
+    text-align: center;
+    vertical-align: left;
 }
 
 details > p {
     padding: 2px 6px;
-    margin: auto;  
+    margin: 0;  
     background-color: #899CA0;
     color: white;
     border-radius: 8px;
+    text-align: left;
 }
 /* margin: auto; */
 
@@ -153,3 +177,15 @@ details:hover {
 }
   
 /*///////////// 3.5 Footer /////////////*/
+
+footer {
+    position: bottom;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #15272E;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
