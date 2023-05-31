@@ -10,8 +10,6 @@ Table of Contents:
         3.5 Footer
 ////////////////////////////////////////////////////////////////////////*/
 
-
-/* grijs #899CA0 en donkergroen #1C2B32 */
 /*////////////////////////
     1. Global Styles
 ////////////////////////*/
@@ -26,7 +24,7 @@ a:hover {
 
 main {
     margin: auto;
-    max-width: 1000px;
+    max-width: 2000px;
     text-align: center;
 }
 
@@ -39,12 +37,15 @@ img {
 div {
     margin: auto;
     max-width: 1000px;
-    padding: 300px;
-    padding-top: 10px;
 }
 
-  
-
+section {
+    display: block;
+    margin: auto;
+    max-width: 650px;
+    text-align: left;
+    padding: 0;
+}  
 
 /*////////////////////////
 2. Typography
@@ -72,6 +73,7 @@ h2 {
 }
 
 p {
+    text-align: left;
     margin: 12px;
 }
 
@@ -88,6 +90,14 @@ p {
     color: #15272E;
 }
 
+button {
+    border-radius: 0 50px 50px 0;
+    width: 250px;
+    padding: 12px 20px;
+    color: white;
+    background-color: #15272E;
+    border-color: #15272E;
+}
 
 /*////////////////////////
     3. Areas
@@ -97,6 +107,9 @@ p {
 
 /*///////////// 3.1 Header /////////////*/
 div.header{
+    padding: 300px;
+    padding-top: 10px;
+
     text-align: center;
     line-height: normal;
     
@@ -105,79 +118,64 @@ div.header{
     background-position: center;
 }
 
+p.header{
+    text-align: center;
+}
+
 input[type=text] {
     border-radius: 50px 0 0 50px;
-    margin: -10px;
+    margin: -5px;
     width: 250px;
     padding: 12px 20px;
-    /* border-color: #15272E; */
+    border-color: #15272E;
     background-color: transparent;
 }
 
-input[type=submit]  {
-    border-radius: 0 50px 50px 0;
-    width: 250px;
-    padding: 12px 20px;
-    color: white;
-    background-color: #15272E;
-}
 /*///////////// 3.2 Testimonial /////////////*/
 div.testimony {
     padding: 50px;
     box-shadow: 3px 6px 6px 3px #899CA0;
     text-align: left;
     margin-bottom: 50px;
+    border-radius: 8px;
+    max-width: 650px;
 }
 
-div.portrait {
-    
-}  
-
-/* div.testimony + div.testimony {
-} */
+div.testimony > figure {
+    vertical-align: right;
+}
 
 /*///////////// 3.3 Support /////////////*/
-section > input[type=submit] {
+section > button {
     border-radius: 50px;
 }
 
-
 /*///////////// 3.4 Faq /////////////*/
-section.faq{
-    max-width: 1000px;
-    margin: 50px;
+section.faq {
+    padding: 20px;
 }
-
-/* details {
-} */
 
 details > summary {
     padding: 2px 6px;
-    width: 100%;
-    text-align: center;
+    text-align: left;
     vertical-align: left;
+    margin: 5px;  
 }
 
 details > p {
-    padding: 2px 6px;
-    margin: 0;  
+    padding: 20px;
+    margin: 0;
     background-color: #899CA0;
     color: white;
     border-radius: 8px;
     text-align: left;
 }
-/* margin: auto; */
-
-/* details[open] > summary {
-    
-  } */
 
 details:hover {
     cursor: pointer;
 }
-  
+ 
 /*///////////// 3.5 Footer /////////////*/
-
 footer {
     position: bottom;
     left: 0;
@@ -187,5 +185,8 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
-  }
+}
+p.footer {
+    text-align: center;
+}
   
